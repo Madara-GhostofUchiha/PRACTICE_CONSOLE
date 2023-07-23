@@ -35,23 +35,48 @@ using System;
 //    }
 //}
 //6.To reverse a string without reverse function
-using System;
-public class program
+//using System;
+//public class program
+//{
+//    public static void Main(string[] args)
+//    {
+//        string str, reversestring = "";
+//        int length;
+//        Console.WriteLine("Enter the string :");
+//        str = Console.ReadLine();
+//        length = str.Length - 1;
+//        while (length >= 0)
+//        {
+//            reversestring = reversestring + str[length];
+//            length--;
+//        }
+//        Console.WriteLine("The Reversed String is :{0}", reversestring);
+//        Console.ReadLine();
+//    }   
+
+//}
+namespace odd_or_even
 {
-    public static void Main(string[] args)
+    internal class Program
     {
-        string Str, reversestring = "";
-        int Length;
-        Console.Write("Enter A String : ");
-        Str = Console.ReadLine();
-        Length = Str.Length - 1;
-        while (Length >= 0)
+        static void Main(string[] args)
         {
-            reversestring = reversestring + Str[Length];
-            Length--;
+            int i;
+            Console.WriteLine("Please Enter A Number");
+            i = int.Parse(Console.ReadLine());
+
+            if (i % 2 == 0)
+            {
+                Console.WriteLine("Even number");
+                Console.Read();
+
+            }
+            else
+            {
+                Console.WriteLine("Odd number");
+                Console.Read();
+            }
+
         }
-        Console.WriteLine("Reverse  String  Is  {0}", reversestring);
-        Console.ReadLine();
     }
 }
-
